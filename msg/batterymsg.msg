@@ -1,0 +1,6 @@
+Header header
+float32 shuntvoltage
+float32 busvoltage
+float32 current_mA
+float32 loadvoltage
+float32 power_mW

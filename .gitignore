@@ -1,0 +1,16 @@
+build/
+devel/
+install/
+.idea
+.vagrant
+doc
+node_modules
+*.out
+*.log
+*.tar.gz
+*.pid
+*.err
+*.pid
+*.out
+*.pyz
+*.pyc
