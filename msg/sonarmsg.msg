@@ -1,2 +1,2 @@
 Header header
-uint16 dist_cm
+uint32 dist_cm

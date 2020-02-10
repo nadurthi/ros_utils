@@ -11,6 +11,8 @@ if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" OR "${CMAKE_CXX_COMPILER_ID}" MATCH
     set(CMAKE_CXX_FLAGS "-O3 -Wall -std=c++1y ${CMAKE_CXX_FLAGS}")
 endif()
 
+set(CUDA_TOOLKIT_ROOT_DIR $ENV{CUDA_TOOLKIT_ROOT_DIR})
+
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
@@ -65,13 +67,10 @@ find_package(OpenCV REQUIRED )
 ## Generate messages in the 'msg' folder
 add_message_files(
    FILES
-   Num.msg
    RawImu.msg
    batterymsg.msg
    roverpwmcontrol.msg
    sonarmsg.msg
-   roverLRthreadCtrl.msg
-   pantiltservomsg.msg
 #   Message1.msg
 #   Message2.msg
 )

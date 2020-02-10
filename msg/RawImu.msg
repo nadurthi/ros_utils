@@ -16,7 +16,5 @@ Header header
 
 
 geometry_msgs/Vector3 linear_acceleration
-float64[3] acc # Row major x, y z 
-
 geometry_msgs/Vector3 angular_velocity
-float64[3] gyro # Row major about x, y, z axes
+
